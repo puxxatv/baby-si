@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy - Baby sì</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="Baby sì - Home">
+        <div class="brand-mark">
+          <img
+            src="1.png"
+            alt="Logo Baby sì"
+          />
+        </div>
+        <div class="brand-title">
+          <strong>Baby sì</strong>
+          <span>Welfare aziendale per famiglie</span>
+        </div>
+      </a>
+
+      <nav aria-label="Navigazione principale">
+        <ul>
+          <li><a id="home-link" href="index.html">Home</a></li>
+          <li><a id="chi-link" href="chi-siamo.html">Chi siamo</a></li>
+          <li><a id="servizi-link" href="servizi.html">Servizi</a></li>
+          <li><a id="come-link" href="come-funziona.html">Come funziona</a></li>
+          <li><a id="contatti-link" href="contatti.html">Contatti</a></li>
+          <li><a id="faq-link" href="faq.html">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <div class="cta-row">
+        <a class="btn btn-primary" href="contatti.html">Contattaci</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="page-title">
+        <div>
+          <div class="breadcrumbs">Baby sì • Privacy</div>
+          <h1>Informativa privacy.</h1>
+        </div>
+        <p>Testo informativo da adattare al vostro progetto.</p>
+      </div>
+
+      <section class="section" aria-label="Informativa privacy">
+        <h2>1) Titolare del trattamento</h2>
+        <p>
+          Il titolare del trattamento è l’organizzazione che eroga il servizio “Baby sì”. Inserite qui i dati del
+          titolare (ragione sociale, sede, contatti).
+        </p>
+
+        <h2>2) Dati trattati</h2>
+        <p>
+          In questa demo i dati inseriti nel modulo contatti vengono validati lato browser e non vengono inviati a un server.
+          Se implementate l’invio reale, indicherete quali dati raccogliete (es. nome, email, messaggio) e la relativa fonte.
+        </p>
+
+        <h2>3) Finalità</h2>
+        <p>
+          Rispondere alle richieste, contattare l’azienda richiedente e gestire l’eventuale avvio del servizio welfare.
+        </p>
+
+        <h2>4) Base giuridica</h2>
+        <p>
+          Il trattamento può fondarsi sul consenso dell’utente e/o su misure precontrattuali, in base a quanto prevedete nel vostro
+          impianto reale.
+        </p>
+
+        <h2>5) Conservazione</h2>
+        <p>
+          I dati saranno conservati per il tempo necessario alla gestione della richiesta e, successivamente, secondo gli obblighi
+          applicabili.
+        </p>
+
+        <h2>6) Diritti dell’interessato</h2>
+        <p>
+          L’interessato può esercitare i diritti previsti dal GDPR (accesso, rettifica, cancellazione, limitazione, opposizione,
+          portabilità, revoca del consenso).
+        </p>
+
+        <h2>Nota importante</h2>
+        <p>
+          Questa pagina è una bozza informativa. Per una versione conforme, fate revisionare il testo al vostro consulente privacy/legale.
+        </p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <strong>Baby sì</strong>
+        <p>
+          Welfare aziendale per un baby-sitting qualificato e su misura.
+          <br />
+          <span style="font-weight:800;">©</span> <span id="year"></span> Baby sì.
+        </p>
+      </div>
+      <div class="footer-links" aria-label="Link utili">
+        <a href="servizi.html">Servizi</a>
+        <a href="faq.html">FAQ</a>
+        <a href="termini.html">Termini</a>
+      </div>
+    </div>
+  </footer>
+
+  <script defer src="app.js"></script>
+  <script>
+    const y = document.getElementById("year");
+    if(y) y.textContent = String(new Date().getFullYear());
+  </script>
+</body>
+</html>
+

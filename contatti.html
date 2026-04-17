@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contatti - Baby sì</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="Baby sì - Home">
+        <div class="brand-mark">
+          <img
+            src="1.png"
+            alt="Logo Baby sì"
+          />
+        </div>
+        <div class="brand-title">
+          <strong>Baby sì</strong>
+          <span>Welfare aziendale per famiglie</span>
+        </div>
+      </a>
+
+      <nav aria-label="Navigazione principale">
+        <ul>
+          <li><a id="home-link" href="index.html">Home</a></li>
+          <li><a id="chi-link" href="chi-siamo.html">Chi siamo</a></li>
+          <li><a id="servizi-link" href="servizi.html">Servizi</a></li>
+          <li><a id="come-link" href="come-funziona.html">Come funziona</a></li>
+          <li><a id="contatti-link" href="contatti.html" aria-current="page">Contatti</a></li>
+          <li><a id="faq-link" href="faq.html">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#contact-form">Richiedi una consulenza</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="page-title">
+        <div>
+          <div class="breadcrumbs">Baby sì • Contatti</div>
+          <h1>Parliamo del tuo welfare.</h1>
+        </div>
+        <p>Compila il form: ti ricontatteremo a breve.</p>
+      </div>
+
+      <section class="section" aria-label="Modulo contatti">
+        <h2>Richiesta di consulenza</h2>
+        <p>
+          Raccontaci la tua azienda e i bisogni delle famiglie. Ti proponiamo un piano flexible benefit
+          includendo servizi di baby-sitting qualificati.
+        </p>
+
+        <form id="contact-form">
+          <label>
+            Nome e cognome
+            <input type="text" name="name" placeholder="Mario Rossi" required />
+          </label>
+          <label>
+            Azienda
+            <input type="text" name="company" placeholder="Nome azienda" required />
+          </label>
+
+          <label>
+            Email
+            <input type="email" name="email" placeholder="nome@azienda.it" required />
+          </label>
+          <label>
+            Telefono (opzionale)
+            <input type="tel" name="phone" placeholder="+39 ..." />
+          </label>
+
+          <label style="grid-column: 1 / -1;">
+            Messaggio
+            <textarea name="message" placeholder="Esigenze welfare, preferenze e tempistiche..." required></textarea>
+          </label>
+
+          <label class="consent-row" style="grid-column: 1 / -1;">
+            <input type="checkbox" name="consent" />
+            <span>Confermo il consenso al trattamento dei dati per rispondere alla richiesta.</span>
+          </label>
+
+          <div class="form-actions">
+            <button class="btn btn-primary" type="submit">Invia richiesta</button>
+          </div>
+
+          <div id="contact-status" class="error" aria-live="polite" style="grid-column: 1 / -1; display:none;"></div>
+        </form>
+      </section>
+
+      <section id="candidatura-babysitter" class="section" aria-label="Candidatura babysitter">
+        <h2>Candidati come baby sitter</h2>
+        <p>
+          Vuoi collaborare con Baby sì? Compila il modulo di candidatura e raccontaci la tua esperienza.
+          Ti contatteremo dopo la valutazione del profilo.
+        </p>
+
+        <form id="babysitter-form">
+          <label>
+            Nome e cognome
+            <input type="text" name="name" placeholder="Giulia Bianchi" required />
+          </label>
+          <label>
+            Città
+            <input type="text" name="city" placeholder="Milano" required />
+          </label>
+
+          <label>
+            Email
+            <input type="email" name="email" placeholder="nome@email.it" required />
+          </label>
+          <label>
+            Telefono
+            <input type="tel" name="phone" placeholder="+39 ..." required />
+          </label>
+
+          <label>
+            Esperienza con bambini
+            <input type="text" name="experience" placeholder="Es. 3 anni, fascia 0-6 anni" required />
+          </label>
+          <label>
+            Disponibilità
+            <input type="text" name="availability" placeholder="Mattina, pomeriggio, weekend..." required />
+          </label>
+
+          <label style="grid-column: 1 / -1;">
+            Certificazioni (opzionale)
+            <textarea name="certifications" placeholder="Primo soccorso, corsi educativi, ecc."></textarea>
+          </label>
+
+          <label style="grid-column: 1 / -1;">
+            Presentazione
+            <textarea name="message" placeholder="Raccontaci qualcosa su di te..." required></textarea>
+          </label>
+
+          <label class="consent-row" style="grid-column: 1 / -1;">
+            <input type="checkbox" name="consent" />
+            <span>Confermo il consenso al trattamento dei dati per la candidatura.</span>
+          </label>
+
+          <div class="form-actions">
+            <button class="btn btn-primary" type="submit">Invia candidatura</button>
+          </div>
+
+          <div id="babysitter-status" class="error" aria-live="polite" style="grid-column: 1 / -1; display:none;"></div>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <strong>Baby sì</strong>
+        <p>
+          Welfare aziendale per un baby-sitting qualificato e su misura.
+          <br />
+          <span style="font-weight:800;">©</span> <span id="year"></span> Baby sì.
+        </p>
+      </div>
+      <div class="footer-links" aria-label="Link utili">
+        <a href="servizi.html">Servizi</a>
+        <a href="faq.html">FAQ</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="termini.html">Termini</a>
+      </div>
+    </div>
+  </footer>
+
+  <script defer src="app.js"></script>
+  <script>
+    const y = document.getElementById("year");
+    if(y) y.textContent = String(new Date().getFullYear());
+  </script>
+</body>
+</html>
+

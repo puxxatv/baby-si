@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Servizi - Baby sì</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="Baby sì - Home">
+        <div class="brand-mark">
+          <img
+            src="1.png"
+            alt="Logo Baby sì"
+          />
+        </div>
+        <div class="brand-title">
+          <strong>Baby sì</strong>
+          <span>Welfare aziendale per famiglie</span>
+        </div>
+      </a>
+
+      <nav aria-label="Navigazione principale">
+        <ul>
+          <li><a id="home-link" href="index.html">Home</a></li>
+          <li><a id="chi-link" href="chi-siamo.html">Chi siamo</a></li>
+          <li><a id="servizi-link" href="servizi.html" aria-current="page">Servizi</a></li>
+          <li><a id="come-link" href="come-funziona.html">Come funziona</a></li>
+          <li><a id="contatti-link" href="contatti.html">Contatti</a></li>
+          <li><a id="faq-link" href="faq.html">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <div class="cta-row">
+        <a class="btn btn-primary" href="contatti.html">Richiedi una consulenza</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="page-title">
+        <div>
+          <div class="breadcrumbs">Baby sì • Servizi</div>
+          <h1>Welfare aziendale e babysitting qualificato.</h1>
+        </div>
+        <p>Soluzioni integrate nei flexible benefit.</p>
+      </div>
+
+      <section class="section">
+        <h2>Cosa offriamo</h2>
+        <p>
+          Un servizio di welfare che mette in contatto <strong>babysitter qualificate</strong> con la tua azienda,
+          supportandoti nello sviluppo di piani dedicati alle famiglie.
+        </p>
+
+        <div class="grid-3">
+          <article class="card">
+            <h3>Welfare per aziende</h3>
+            <p>
+              Progettazione e supporto per piani welfare che includano baby-sitting qualificato.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Flexible benefit</h3>
+            <p>
+              Soluzioni personalizzabili, pensate per conciliare al meglio vita privata e professionale.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Supporto alle famiglie</h3>
+            <p>
+              Servizi accessibili tramite piani welfare aziendale, con processi chiari e affidabili.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Garanzie di qualificazione</h2>
+        <div class="list">
+          <div class="list-item">
+            <div class="check">✓</div>
+            <div>
+              <h3>Metodo Officina Educativa</h3>
+              <p>Percorso formativo per competenze educative e gestione quotidiana in sicurezza.</p>
+            </div>
+          </div>
+          <div class="list-item">
+            <div class="check">✓</div>
+            <div>
+              <h3>Primo soccorso certificato</h3>
+              <p>Certificazione per il primo soccorso rilasciata da Croce Rossa.</p>
+            </div>
+          </div>
+          <div class="list-item">
+            <div class="check">✓</div>
+            <div>
+              <h3>Servizio su misura</h3>
+              <p>In base alle esigenze del personale: flessibilità e attenzione ai dettagli.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Vuoi inserire Baby sì nel tuo welfare?</h2>
+        <p>
+          Raccontaci dimensione aziendale e bisogni: ti proponiamo un piano flexible benefit con baby-sitting
+          qualificato e una modalità di accesso semplice per i dipendenti.
+        </p>
+        <a class="btn btn-primary" href="contatti.html">Parliamone insieme</a>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <strong>Baby sì</strong>
+        <p>
+          Welfare aziendale per un baby-sitting qualificato e su misura.
+          <br />
+          <span style="font-weight:800;">©</span> <span id="year"></span> Baby sì.
+        </p>
+      </div>
+      <div class="footer-links" aria-label="Link utili">
+        <a href="faq.html">FAQ</a>
+        <a href="come-funziona.html">Come funziona</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="termini.html">Termini</a>
+      </div>
+    </div>
+  </footer>
+
+  <script defer src="app.js"></script>
+  <script>
+    const y = document.getElementById("year");
+    if(y) y.textContent = String(new Date().getFullYear());
+  </script>
+</body>
+</html>
+

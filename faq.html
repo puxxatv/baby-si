@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FAQ - Baby sì</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="Baby sì - Home">
+        <div class="brand-mark">
+          <img
+            src="1.png"
+            alt="Logo Baby sì"
+          />
+        </div>
+        <div class="brand-title">
+          <strong>Baby sì</strong>
+          <span>Welfare aziendale per famiglie</span>
+        </div>
+      </a>
+
+      <nav aria-label="Navigazione principale">
+        <ul>
+          <li><a id="home-link" href="index.html">Home</a></li>
+          <li><a id="chi-link" href="chi-siamo.html">Chi siamo</a></li>
+          <li><a id="servizi-link" href="servizi.html">Servizi</a></li>
+          <li><a id="come-link" href="come-funziona.html">Come funziona</a></li>
+          <li><a id="contatti-link" href="contatti.html">Contatti</a></li>
+          <li><a id="faq-link" href="faq.html" aria-current="page">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <div class="cta-row">
+        <a class="btn btn-primary" href="contatti.html">Richiedi una consulenza</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="page-title">
+        <div>
+          <div class="breadcrumbs">Baby sì • FAQ</div>
+          <h1>Domande frequenti.</h1>
+        </div>
+        <p>Risposte chiare, pensate per le aziende.</p>
+      </div>
+
+      <section class="section faq" aria-label="Sezione FAQ">
+        <h2>FAQ</h2>
+
+        <details>
+          <summary>Cos’è Baby sì?</summary>
+          <p>
+            Baby sì è un servizio welfare che mette in contatto <strong>famiglie</strong> e
+            <strong>babysitter qualificate</strong> tramite piani di flexible benefit pensati per le aziende.
+          </p>
+        </details>
+
+        <details>
+          <summary>In cosa consiste il welfare aziendale?</summary>
+          <p>
+            Aiutiamo le aziende nello sviluppo di soluzioni di welfare dedicate alle famiglie, attraverso
+            piani di flexible benefit che includono servizi qualificati di baby-sitting.
+          </p>
+        </details>
+
+        <details>
+          <summary>Come vengono selezionate le babysitter?</summary>
+          <p>
+            Le babysitter del network sono formate tramite il metodo di <strong>Officina Educativa</strong>
+            e seguono un percorso formativo che include certificazione per il primo soccorso rilasciata da
+            <strong>Croce Rossa</strong>.
+          </p>
+        </details>
+
+        <details>
+          <summary>Le famiglie come accedono al servizio?</summary>
+          <p>
+            L’accesso avviene tramite il piano welfare aziendale: i dipendenti possono richiedere il servizio
+            secondo le regole definite nel piano flexible benefit.
+          </p>
+        </details>
+
+        <details>
+          <summary>È fiscalmente vantaggioso?</summary>
+          <p>
+            Il servizio si inserisce in piani flexible benefit. Le modalità fiscali dipendono dalla normativa applicabile:
+            per dettagli e conferme, ti consigliamo di confrontarti con i referenti aziendali competenti.
+          </p>
+        </details>
+
+        <details>
+          <summary>Quanto tempo serve per attivare il servizio?</summary>
+          <p>
+            In genere si parte con un brief, si definisce il piano flexible benefit e poi si passa al matching:
+            la tempistica finale dipende dalla complessità del piano e dalle esigenze dell’azienda.
+          </p>
+        </details>
+
+        <details>
+          <summary>Cosa succede in caso di urgenza?</summary>
+          <p>
+            Le babysitter seguono un percorso formativo comprensivo del primo soccorso. Durante la gestione,
+            applichiamo procedure di sicurezza e supporto per garantire una risposta tempestiva.
+          </p>
+        </details>
+
+        <details>
+          <summary>Il servizio è personalizzabile?</summary>
+          <p>
+            Sì. Supportiamo le aziende nella definizione del piano, adattando criteri, processi di richiesta e
+            livello di servizi inclusi per meglio rispondere alle esigenze del personale.
+          </p>
+        </details>
+      </section>
+
+      <section class="section">
+        <h2>Non trovi la risposta che cerchi?</h2>
+        <p>Scrivici: ti aiutiamo a valutare il piano welfare più adatto alla tua azienda.</p>
+        <a class="btn btn-primary" href="contatti.html">Contattaci</a>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <strong>Baby sì</strong>
+        <p>
+          Welfare aziendale per un baby-sitting qualificato e su misura.
+          <br />
+          <span style="font-weight:800;">©</span> <span id="year"></span> Baby sì.
+        </p>
+      </div>
+      <div class="footer-links" aria-label="Link utili">
+        <a href="servizi.html">Servizi</a>
+        <a href="come-funziona.html">Come funziona</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="termini.html">Termini</a>
+      </div>
+    </div>
+  </footer>
+
+  <script defer src="app.js"></script>
+  <script>
+    const y = document.getElementById("year");
+    if(y) y.textContent = String(new Date().getFullYear());
+  </script>
+</body>
+</html>
+
